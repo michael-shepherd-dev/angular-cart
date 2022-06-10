@@ -1,0 +1,33 @@
+.item-card {
+  display: flex;
+  flex-flow: wrap;
+  flex: 1;
+  min-width: 300px;
+  width: 300px;
+  min-height: 180px;
+  height: 180px;
+  flex-direction: row;
+  margin: 5px;
+  border: 1px solid rgb(134, 155, 175);
+  border-radius: 6px ;
+  background-color:rgb(161, 177, 192);
+}
+
+.header-card {
+  height: 28px;
+  width: 100%;
+  margin: 3px;
+}
+
+.body-card {
+  height: 78px;
+  margin: 3px;
+}
+
+.bottom-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}

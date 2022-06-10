@@ -1,4 +1,8 @@
-
+.items-container {
+  display: inline-flex;
+  min-width: 350px;
+  min-height: 180px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

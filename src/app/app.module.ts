@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   imports: [
@@ -19,15 +20,16 @@ import { ShippingComponent } from './shipping/shipping.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent }
+      { path: 'shipping', component: ShippingComponent },
+      { path: '**', component: ProductListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
+    ProductComponent,
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
